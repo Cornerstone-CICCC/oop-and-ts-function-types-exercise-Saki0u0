@@ -3,8 +3,11 @@
 // If no greeting is provided, use "Hello" as the default message.
 // The function should log the greeting message followed by the name. Specify the correct return type for logging.
 
-function greet(name, message) {
-
+function greet(name:string, message:string):void{
+  if (!message) { 
+    message = "Hello"; 
+  }
+  console.log(`${message}, ${name}!`)
 }
 
 greet("John");               // Expected output: Hello, John!
