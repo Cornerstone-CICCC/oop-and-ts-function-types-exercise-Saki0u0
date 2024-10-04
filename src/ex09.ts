@@ -6,7 +6,7 @@ function subtract(x: number, y: number): number {
 }
 
 const mySubtract :typeof subtract = function(x, y):number {
-  return x * y;
+  return x - y;
 }
 
 console.log(mySubtract(10, 5)); // Expected output: 5
